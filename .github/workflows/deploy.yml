@@ -1,4 +1,4 @@
-name: 'Builder'
+name: Deploy
 
 on:
   push:
@@ -7,13 +7,13 @@ on:
 
 
 jobs:
-  build:
-    name: Build
+  prepate:
+    name: Prepare
     runs-on: ubuntu-latest
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Upload an artifact for GitHub Pages
       uses: actions/upload-pages-artifact@v3
