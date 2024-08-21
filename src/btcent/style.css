@@ -1,0 +1,62 @@
+@media all and ( min-width: 640px ) {
+	span { font-size: 18pt; }
+	a { font-size: 14pt; }
+}
+
+@media all and ( min-width: 1280px ) {
+	span { font-size: 22pt; }
+	a { font-size: 18pt; }
+}
+
+@font-face {
+	font-family: 'bernadette';
+	src: url('font.ttf');
+}
+
+* {
+	font-family: 'bernadette';
+	color: #d8d8d8;
+	outline: none;
+	text-decoration: none;
+	user-drag: none;
+	user-select: none;
+	word-break: break-all;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-touch-callout: none;
+}
+
+body {
+	cursor: default;
+	background: #010101;
+	margin: 5px;
+} 
+
+img {
+	width: 35%;
+	height: 35%;
+}
+
+a {
+	color: #777;
+}
+
+a:hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.spacer {
+	height: 15px;
+}

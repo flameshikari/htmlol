@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Komika;
+  src: url('font.ttf');
+}
+
+* {
+  font-family: Komika;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  user-select: none;
+  word-break: break-all;
+  -moz-box-sizing: border-box;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+a {
+  font-size: 18pt;
+  color: #eee;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+audio {
+  filter: grayscale(1) contrast(130%) invert(0%);
+}
+
+audio, img {
+  height: 100%;
+  width: 100%;
+}
+
+ul li {
+  padding: 5px;
+  display: inline;
+}
+
+li a {
+  font-size: 14pt;
+  color: #666;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url('background.gif');
+  background-size: cover;
+  box-shadow: inset 0 0 0 4000px rgba(0, 0, 0, 0.9);
+  background-position: center;
+}
+
+.content {
+  width: 500px;
+  background: #000;
+  overflow: hidden;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 40px;
+  }
+
+  a {
+    font-size: 14pt;
+  }
+
+  li a {
+    font-size: 10pt;
+    color: #666;
+  }
+
+}
+
+
+
